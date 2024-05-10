@@ -12,9 +12,8 @@ const Search = ({data}) => {
     <Fragment>
         <div className='search__box-result'>
             {
-                !data.length ? <span>Bu prodact topilmadi</span> : <></>
+                !data || data.length === 0 ? <span>Bu prodact topilmadi</span> : <></>
             }
-
            {searchItem}
         </div>
     </Fragment>
