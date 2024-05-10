@@ -5,6 +5,7 @@ import Product from './components/product'
 import About from './components/about'
 import Choose from './components/choose'
 import Footer from './components/footer'
+import Premium from './components/premium'
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Hero/>
         <Product/>
         <About/>
+        <Premium/>
         <Choose/>
       </main>
       <Footer/>
