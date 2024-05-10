@@ -1,0 +1,145 @@
+$primaryCl:#000000;
+$secondaryCl:#FF0000;
+$tertiaryCl:#ffffff;
+.hero{
+    margin-top: 69px;
+    &__wrapper{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    &__text{
+        font-family: Lilita One;
+        font-size: 64px;
+        font-weight: 400;
+        line-height: 73.15px;
+        color:$primaryCl;
+    }
+    &__title{
+        font-family: "Lalezar", system-ui;
+        font-size: 96px;
+        font-weight: 400;
+        line-height: 110px;
+        color:$secondaryCl;
+    }
+    &__btn{
+        padding: 14px 33px;
+        border: 1px solid $secondaryCl;
+        border-radius: 20px;
+        background-color: $secondaryCl;
+        font-family: Lalezar;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 37.61px;
+        color: $tertiaryCl;
+        transition: all 0.5s ease;
+        &:hover{
+            background-color: transparent;
+            color: $secondaryCl;
+        }
+    }
+    &__img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width:1370px){
+    .hero{
+        margin-top: 50px;
+        &__title{
+            font-size: 80px;
+            line-height: 100px;
+        }
+        &__text{
+            font-size: 74px;
+            line-height: 73.15px;
+        }
+    }
+}
+@media (max-width:1245px){
+    .hero{
+        margin-top: 30px;
+        &__title{
+            font-size: 70px;
+            line-height: 80px;
+        }
+        &__text{
+            font-size: 64px;
+            line-height: 73.15px;
+        }
+        &__btn{
+            padding: 12px 28px;
+            font-size: 20px;
+            line-height: 37.61px;
+        }
+    }
+}
+@media (max-width:1165px){
+    .hero{
+        margin-top: 20px;
+        &__title{
+            font-size: 58px;
+            line-height: 70px;
+            margin: 5px 0;
+        }
+        &__text{
+            font-size: 48px;
+            line-height: 60px;
+        }
+        &__btn{
+            padding: 10px 24px;
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
+}
+@media (max-width:1075px){
+    .hero{
+        margin-top: 10px;
+        &__title{
+            font-size: 45px;
+            line-height: 60px;
+            margin: 5px 0;
+        }
+        &__text{
+            font-size: 38px;
+            line-height: 48px;
+        }
+        &__btn{
+            padding: 10px 24px;
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
+}
+@media (max-width:975px){
+    .hero{
+        margin-top: 10px;
+        &__wrapper{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+}
+
+@media (max-width:370px){
+    .hero{
+        margin-top: 10px;
+        &__title{
+            font-size: 30px;
+            line-height: 40px;
+            margin: 8px 0;
+        }
+        &__text{
+            font-size: 20px;
+            line-height: 30px;
+        }
+        &__btn{
+            padding: 8px 16px;
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+}

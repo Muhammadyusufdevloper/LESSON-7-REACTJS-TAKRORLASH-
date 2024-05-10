@@ -1,0 +1,80 @@
+.choose{
+    margin-bottom: 110px;
+    &__cards{
+        margin-top: 160px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    &__card{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 339px;
+    }
+    &__title{
+        font-family: Lalezar;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 60px;
+        color: black;
+        text-align: center;  
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+    }
+    &__text{
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.78px;
+        color: black;
+        text-align: center;  
+    }
+}
+
+@media (max-width:1270px){
+    .choose{
+        &__title{
+            font-size: 34px;
+            line-height: 60px;
+        }
+        &__text{
+            font-size: 16px;
+            line-height: 21.78px;
+        }
+    }
+}
+
+@media (max-width:833px){
+    .choose{
+        &__cards{
+            margin-top: 120px;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width:500px){
+    .choose{
+        &__cards{
+            margin-top: 90px;
+        }
+        &__card{
+            gap: 10px;
+        }
+        &__title{
+            font-size: 26px;
+            line-height: 40px;
+        }
+        &__text{
+            font-size: 14px;
+            line-height: 21.78px;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.search__box-result{
+    position: absolute;
+    border-radius: 4px 4px 0 0;
+    padding: 8px 10px 10px 15px;
+    top: calc(100% + 3px);
+    left: 0;
+    max-height: 200px;
+    width: 100%;
+    background-color: #EDF2F4;
+    overflow-y:scroll ;
+    scrollbar-width: none;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+.search__text{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    font-size: 12px;
+}
+.search__card{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.search__img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
